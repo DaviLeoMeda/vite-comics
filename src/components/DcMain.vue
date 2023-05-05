@@ -6,8 +6,26 @@ export default {
             mainImg: [
                 {
                     name: 'digital comics',
-                    src: ''
-                }
+                    src: '../../public/img/buy-comics-digital-comics.png'
+                },
+                {
+                    name: 'dc merchandise',
+                    src: '../../public/img/buy-comics-merchandise.png'
+                },
+                {
+                    name: 'subscriptions',
+                    src: '../../public/img/buy-comics-subscriptions.png'
+                },
+                {
+                    name: 'comic shop locator',
+                    src: '../../public/img/buy-comics-shop-locator.png'
+                },
+                {
+                    name: 'dc power visa',
+                    src: '../../public/img/buy-dc-power-visa.svg'
+                },
+
+
             ]
 
         }
