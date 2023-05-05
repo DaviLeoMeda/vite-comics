@@ -77,7 +77,6 @@ main {
 
         .secondMain {
 
-            height: 130px;
             width: 80%;
             margin: 0 auto;
             display: flex;

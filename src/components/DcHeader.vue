@@ -7,52 +7,52 @@ export default {
                 {
                     name: 'characters',
                     url: '/',
-                    current: 'false'
+                    current: false
                 },
                 {
                     name: 'comics',
                     url: '/',
-                    current: 'true'
+                    current: true
                 },
                 {
                     name: 'movies',
                     url: '/',
-                    current: 'false'
+                    current: false
                 },
                 {
                     name: 'tv',
                     url: '/',
-                    current: 'false'
+                    current: false
                 },
                 {
                     name: 'games',
                     url: '/',
-                    current: 'false'
+                    current: false
                 },
                 {
                     name: 'collectibles',
                     url: '/',
-                    current: 'false'
+                    current: false
                 },
                 {
                     name: 'videos',
                     url: '/',
-                    current: 'false'
+                    current: false
                 },
                 {
                     name: 'fans',
                     url: '/',
-                    current: 'false'
+                    current: false
                 },
                 {
                     name: 'news',
                     url: '/',
-                    current: 'false'
+                    current: false
                 },
                 {
                     name: 'shop',
                     url: '/',
-                    current: 'false'
+                    current: false
                 }
             ]
         }
@@ -113,9 +113,17 @@ header {
 
 
                 li {
+                    line-height: 100px;
+
+                    &.active {
+                        border-bottom: 5px solid blue;
+                    }
+
                     &.active a {
                         color: blue;
                     }
+
+
 
                     a {
                         text-decoration: none;
