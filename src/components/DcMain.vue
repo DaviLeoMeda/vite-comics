@@ -1,6 +1,12 @@
 <script>
+
+import DigitalDetails from './DigitalDetails.vue'
+
 export default {
     name: "DcMain",
+    components: {
+        DigitalDetails
+    },
     data() {
         return {
             mainImg: [
@@ -39,11 +45,13 @@ export default {
     <main>
 
         <div class="firstMain">
-            Qui ci andranno i fumetti
+
         </div>
 
-        <div class="secondMain">
-
+        <div class="backSide">
+            <div class="secondMain">
+                <DigitalDetails v-for="( elem, index ) in mainImg" :key="index" :digitalElement="elem" />
+            </div>
         </div>
 
     </main>
@@ -53,15 +61,41 @@ export default {
 main {
 
     .firstMain {
-        background-color: rgb(15, 15, 15);
-        height: 100px;
-        color: white;
+        // background-color: rgb(15, 15, 15);
+        height: 300px;
+        background-image: url(../../public/img/jumbotron.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+
+
+
     }
 
-    .secondMain {
+    .backSide {
+
         background-color: rgb(74, 74, 238);
-        height: 130px;
+
+        .secondMain {
+
+            height: 130px;
+            width: 80%;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+
+
+            .mainDig {
+                display: flex;
+                align-items: center;
+                padding: 100px 10px;
+                text-transform: uppercase;
+                color: #fff;
+
+            }
+        }
     }
+
 
 }
 </style>
