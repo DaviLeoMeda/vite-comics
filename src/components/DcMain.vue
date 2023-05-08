@@ -87,7 +87,7 @@ main {
             .mainDig {
                 display: flex;
                 align-items: center;
-                padding: 100px 10px;
+                padding: 50px 0;
                 text-transform: uppercase;
                 color: #fff;
 
